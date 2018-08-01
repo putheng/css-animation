@@ -1,0 +1,45 @@
+<img src="http://sergeche.github.io/gpu-article-assets/images/sun-full.png" class="sun" />
+
+<p id="countText">lorem text</p>
+<style type="text/css">
+.sun {
+	animation: sun-spin 10s linear infinite;
+}
+
+#countText {
+	-webkit-animation-name: color2;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 0s;
+}
+
+@keyframes sun-spin {
+
+	from {
+		transform: rotate(0);
+	}
+	to   {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes color2 {
+	0% {
+
+	}
+	5%, 25% {
+		text-shadow: -2px -5px 10px #fb0017,
+		-5px 0px 10px #3a00cd,
+		-5px 5px 10px #00ff3a;
+	}
+	15%, 35% {
+		text-shadow: 2px 5px 10px #fb0017,
+		5px 0px 10px #3a00cd,
+		5px -5px 10px #00ff3a;
+	}
+	40% {
+		text-shadow: none;
+	}
+}
+</style>
